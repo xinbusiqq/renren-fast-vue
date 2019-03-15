@@ -24,6 +24,16 @@
             <span slot="title">ueditor</span>
           </el-menu-item>
         </el-submenu>
+        <el-submenu index="lq">
+          <template slot="title">
+            <icon-svg name="shoucang" class="site-sidebar__menu-icon"></icon-svg>
+            <span>lq</span>
+          </template>
+          <el-menu-item index="data-transform" @click="$router.push({ name: 'lq-data-transform' })">
+            <icon-svg name="editor" class="site-sidebar__menu-icon"></icon-svg>
+            <span slot="title">dataTransform</span>
+          </el-menu-item>
+        </el-submenu>
         <sub-menu
           v-for="menu in menuList"
           :key="menu.menuId"
